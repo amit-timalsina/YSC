@@ -52,26 +52,31 @@ Flaticon icon font: Flaticon
 
 
 
-.navbar{
-  position: relative;
+.navbar .navbar-brand{
+  font-weight: bold;
 }
 .navbar .nav-link {
   font-size: 14px;
   text-transform: uppercase;
   padding-left: 1rem !important;
   padding-right: 1rem !important;
+  color: #130947 !important;
+  font-family: sans-serif;
+  font-weight: bold;
 }
-
+.navbar .nav-link:hover{
+  color: #4f87fb !important;
+}
 .icon-color {
-  color:#42B6FF ;
+  color: #4f87fb ;
 }
 
 .bg-nav {
-  background: #42B6FF ;
+  background: #fff ;
 }
 
-.navbar .nav-item.active {
-  border-left: #40B5F0 3px solid;
+.navbar-nav .nav-item.active {
+  border-left: #4f87fb 3px solid;
 }
 
 .carousel-item {
@@ -100,7 +105,7 @@ Flaticon icon font: Flaticon
   background-attachment: fixed;
   background-repeat: no-repeat;
   text-align: center;
-  color: #fff;
+  color: rgb(19, 9, 71);
 }
 
 .dark-overlay {
@@ -109,7 +114,7 @@ Flaticon icon font: Flaticon
   left: 0;
   width: 100%;
   height: 100%;
-  background:rgba(66, 182, 255,.7) ;
+  background:rgba(19, 9, 71, 0.637) ;
 }
 
 #video-play {

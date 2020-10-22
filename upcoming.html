@@ -13,11 +13,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style1.css">
+  <link rel="stylesheet" href="css/animate.min.css" />
   <title>YSC -> Young Scientist Community</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-sm navbar-dark bg-nav">
+  <nav class="navbar navbar-expand-sm navbar-light bg-nav">
     <div class="container">
       <a href="index.html" class="navbar-brand">YSC</a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -29,10 +30,10 @@
             <a href="index.html" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="about.html" class="nav-link">About Us</a>
+            <a href="about.html" class="nav-link">About</a>
           </li>
           <li class="nav-item active">
-            <a href="upcoming.html" class="nav-link">UpComing Events</a>
+            <a href="upcoming.html" class="nav-link">Events</a>
           </li>
           <li class="nav-item">
             <a href="contact.html" class="nav-link">Contact</a>
@@ -129,9 +130,9 @@
                 </p>
                 <ul class="social-link">
                   <li>
-                    <a href="#" class="d-block" target="_blank"
-                      ><i class="bx bxl-facebook"></i
-                    ></a>
+                    <a href="#" class="d-block" target="_blank">
+                      <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    </a>
                   </li>
                   <li>
                     <a href="#" class="d-block" target="_blank"
@@ -224,16 +225,16 @@
         </div>
   
         <div class="footer-shape1">
-          <img src="./img/logo.png" alt="image" />
+          <img src="./img/design.png" alt="image" />
         </div>
         <div class="footer-shape2">
-          <img src="./img/logo.png" alt="image" />
+          <img src="./img/design.png" alt="image" />
         </div>
         <div class="footer-shape3">
-          <img src="./img/logo.png" alt="image" />
+          <img src="./img/design.png" alt="image" />
         </div>
       </footer>
-
+      <div class="go-top"><i class="fa fa-arrow-up" aria-hidden="true" id = "myBtn"></i></div>
 <!-- FOOTER
    <footer id="main-footer" class="text-center p-4">
     <div class="container">
@@ -249,11 +250,37 @@
 
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+  <script>
+    // Go to Top
+$(function(){
+  // Scroll Event
+  $(window).on('scroll', function(){
+    var scrolled = $(window).scrollTop();
+    if (scrolled > 300) $('.go-top').addClass('active');
+    if (scrolled < 300) $('.go-top').removeClass('active');
+  });  
+  // Click Event
+  $('.go-top').on('click', function() {
+    $("html, body").animate({ scrollTop: "0" },  500);
+  });
+});
+</script>
+  <script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+
+    $('.slider').slick({
+      infinite: true,
+      slideToShow: 1,
+      slideToScroll: 1
+    });
+  </script>
 
   <script>
     // Get the current year for the copyright
