@@ -1,26 +1,26 @@
 (function ($) {
-		// Navbar Menu JS
-		$('.navbar-nav li a').on('click', function(e){
-			var anchor = $(this);
-			$('html, body').stop().animate({
-				scrollTop: $(anchor.attr('href')).offset().top - 100
-			}, 1500);
-			e.preventDefault();
-		});
-		$(document).on('click','.navbar-collapse.in',function(e) {
-			if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
-				$(this).collapse('hide');
-			}
-		});
-		$('.navbar-nav li a').on('click', function(){
-			$('.navbar-collapse').collapse('hide');
-			$('.burger-menu').removeClass('active');
-		});
-		
-		// Burger Menu
-		$('.burger-menu').on('click', function() {
-			$(this).toggleClass('active');
-		});
+	// Navbar Menu JS
+	$('.navbar-nav li a').on('click', function (e) {
+		var anchor = $(this);
+		$('html, body').stop().animate({
+			scrollTop: $(anchor.attr('href')).offset().top - 100
+		}, 1500);
+		e.preventDefault();
+	});
+	$(document).on('click', '.navbar-collapse.in', function (e) {
+		if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
+			$(this).collapse('hide');
+		}
+	});
+	$('.navbar-nav li a').on('click', function () {
+		$('.navbar-collapse').collapse('hide');
+		$('.burger-menu').removeClass('active');
+	});
+
+	// Burger Menu
+	$('.burger-menu').on('click', function () {
+		$(this).toggleClass('active');
+	});
 	// Header Sticky
 	$(window).on('scroll', function () {
 		if ($(this).scrollTop() > 100) {
@@ -55,6 +55,16 @@
 		$(".main-banner-content p").addClass("animated fadeInUp").css("opacity", "1");
 		$(".main-banner-content .btn-box").addClass("animated fadeInUp").css("opacity", "1");
 		$(".main-banner-image img").addClass("animated fadeInUp").css("opacity", "1");
+	});
+	// setInterval(function() { makeTimer(); }, 0);
+	// Odometer JS
+	$('.odometer').appear(function () {
+		var odo = $(".odometer");
+		odo.each(function () {
+			var countNumber = $(this).attr("data-count");
+			$(this).html(countNumber);
+			console.log('amit')
+		});
 	});
 
 	// WoW JS
