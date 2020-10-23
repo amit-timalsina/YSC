@@ -147,3 +147,24 @@ Flaticon icon font: Flaticon
   background: #42B6FF ;
   color: #fff;
 }
+#card-car{
+  padding-top:20px;
+  text-align: center;
+}
+.fa{
+  font-size: 1.5em;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+.fa-chevron-left, .fa-chevron-right{
+  margin-left: 8px;
+  margin-right: 8px;
+  background-color: #40B5F0;
+  border-radius: 50%;
+  color: #eee;
+  box-shadow: 5px 8px 10px grey;
+}
+
+.controls-top{
+  text-align: center;
+}
