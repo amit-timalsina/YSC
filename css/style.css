@@ -152,7 +152,10 @@ Flaticon icon font: Flaticon
   background: #42B6FF ;
   color: #fff;
 }
-#card-car{
+#cards{
+  margin: 10px;
+}
+#card-car-head{
   padding:20px 0px 5px;
 
   text-align: center;
@@ -173,4 +176,7 @@ Flaticon icon font: Flaticon
 
 .controls-top{
   text-align: center;
+}
+#staff{
+  background: #4F87FB;
 }
