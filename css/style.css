@@ -153,7 +153,8 @@ Flaticon icon font: Flaticon
   color: #fff;
 }
 #card-car{
-  padding-top:20px;
+  padding:20px 0px 5px;
+
   text-align: center;
 }
 .fa{
