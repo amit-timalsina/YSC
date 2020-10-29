@@ -54,6 +54,7 @@
   </header>
 
   <!-- CONTACT SECTION -->
+  <form action="/contact" method="POST">
   <section id="contact" class="py-3">
     <div class="container">
       <div class="row">
@@ -79,29 +80,29 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="First Name">
+                    <input type="text" class="form-control" placeholder="First Name" name="firstname">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Last Name">
+                    <input type="text" class="form-control" placeholder="Last Name" name="lastname">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Email">
+                    <input type="text" class="form-control" placeholder="Email" name="email">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Phone Number">
+                    <input type="text" class="form-control" placeholder="Phone Number" name="phone">
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-12">
                   <div class="form-group">
-                    <textarea class="form-control" placeholder="Message"></textarea>
+                    <textarea class="form-control" placeholder="Message" name="message"></textarea>
                   </div>
                 </div>
                 <div class="col-md-12">
@@ -118,7 +119,7 @@
       </div>
     </div>
   </section>
-
+</form>
   <!-- STAFF -->
   <section id="staff" class="py-5 text-center text-white">
     <div class="container">
