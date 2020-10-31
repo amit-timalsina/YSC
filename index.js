@@ -30,7 +30,7 @@ const transporter = mailer.createTransport({
 //Creating a page for getting post request and Sending mail.
 app.post('/contact', async (req, res) => {
 	//Getting all the key values from the form in the contact page
-	let firstname = req.body.name;
+	let name = req.body.name;
 	let email = req.body.email;
 	let phonenumber = req.body.phone;
 	let message = req.body.message;
@@ -40,7 +40,7 @@ app.post('/contact', async (req, res) => {
 		from: "tempmail.ysc@gmail.com",
 		//This is sending the mail to apurba4790@gmail.com
 		to: "apurba4790@gmail.com", //Change this
-		subject: `Contact Us | ${firstname} ${lastname}`,
+		subject: `Contact Us | ${name}`,
 		//Making it send mail in HTML format
 		html: `<h2>${name}</h2> <h3>${email}</h3><h3>${phonenumber}</h3><h3>${message}</h3>`
 	})
