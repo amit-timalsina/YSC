@@ -43,7 +43,7 @@ textarea {
 
 .circle {
   border-radius: 50%;
-  background: linear-gradient(135deg, transparent 20%, #4f87fb);
+  background: linear-gradient(135deg, transparent 20%, #4f87fa);
   position: absolute;
 }
 
@@ -147,8 +147,8 @@ textarea.input {
 }
 
 .btn:hover {
-  background-color: transparent;
-  color: #fff;
+  background-color: #130947;
+  color: #ffffff;
 }
 
 .input-container span {
