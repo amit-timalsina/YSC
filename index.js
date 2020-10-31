@@ -16,7 +16,9 @@ app.use(bodyParser.urlencoded({
 //Creating transporter for sending mail
 //Transporter is the Gateway for sending API request for sending mail
 const transporter = mailer.createTransport({
+	//Taking gmail host for sending mail
 	host: "smtp.gmail.com",
+	//Using port 587 which is TSL port for sending mail
 	port: 587,
 	secure: false,
 	auth: {
@@ -28,8 +30,7 @@ const transporter = mailer.createTransport({
 //Creating a page for getting post request and Sending mail.
 app.post('/contact', async (req, res) => {
 	//Getting all the key values from the form in the contact page
-	let firstname = req.body.firstname;
-	let lastname = req.body.lastname;
+	let firstname = req.body.name;
 	let email = req.body.email;
 	let phonenumber = req.body.phone;
 	let message = req.body.message;
@@ -41,7 +42,7 @@ app.post('/contact', async (req, res) => {
 		to: "apurba4790@gmail.com", //Change this
 		subject: `Contact Us | ${firstname} ${lastname}`,
 		//Making it send mail in HTML format
-		html: `<h2> ${firstname} ${lastname}</h2> <h3>${email}</h3><h3>${phonenumber}</h3><h3>${message}</h3>`
+		html: `<h2>${name}</h2> <h3>${email}</h3><h3>${phonenumber}</h3><h3>${message}</h3>`
 	})
 	//Redirecting to the previous contact.html page
 	res.redirect("/contact.html");
