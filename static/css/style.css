@@ -55,7 +55,11 @@ Flaticon icon font: Flaticon
   height: 70px;
   width: auto;
 }
-
+.blockquote p{
+  padding-top: 8px;
+  color: rgb(51, 51, 51);
+  font-size: 20px;
+}
 
 .navbar .navbar-brand{
   font-weight: bold;
