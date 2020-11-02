@@ -52,7 +52,7 @@ app.post('/contact', async (req, res) => {
 app.use(express.static("static"));
 
 //Running the website in port 3000 and printing Site is running when the site starts running
-app.listen(3000, () => {
+app.listen(4000, () => {
 	console.log("Site is running at port 3000");
 })
 

@@ -48,8 +48,13 @@ Flaticon icon font: Flaticon
 
 
 
-
-
+#testimonials{
+  padding: 2em;
+}
+.blockquote img{
+  height: 70px;
+  width: auto;
+}
 
 
 .navbar .navbar-brand{
@@ -101,7 +106,7 @@ Flaticon icon font: Flaticon
 #home-heading {
   position: relative;
   min-height: 200px;
-  background: url('../img/lights.jpg');
+  background: url('../img/drawing.png');
   background-attachment: fixed;
   background-repeat: no-repeat;
   text-align: center;
@@ -120,7 +125,7 @@ Flaticon icon font: Flaticon
 #video-play {
   position: relative;
   min-height: 200px;
-  background: url('../img/media.jpg');
+  background: url('../img/robotics.png');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: 0 -300px;

@@ -384,10 +384,10 @@ h6 {
     repeat: no-repeat;
   }
   &.banner-bg1 {
-    background-image: url(../img/image1.jpg);
+    background-image: url(../img/banner1.png);
   }
   &.banner-bg2 {
-    background-image: url(../img/image2.jpg);
+    background-image: url(../img/banner2.png);
   }
   &.banner-bg3 {
     background-image: url(../img/image3.jpg);
@@ -400,6 +400,7 @@ h6 {
   }
 }
 .main-banner-content {
+  // padding-top: em;
   .sub-title {
     color: $white-color;
     display: block;
@@ -1048,6 +1049,86 @@ Go Top CSS
     }
   }
 }
+/*================================================
+Page Title Area CSS
+=================================================*/
+.page-title-area {
+  position: relative;
+  z-index: 1;
+  background: {
+      color: $main-color;
+      image: url(../img/logo.png);
+      position: right;
+      repeat: no-repeat;
+      size: cover;
+
+  };
+  padding: {
+      top: 150px;
+      bottom: 130px;
+  };
+  &::before {
+      width: 100%;
+      height: 100%;
+      background-color: $black-color;
+      opacity: 0.75;
+      content: '';
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      top: 0;
+  }
+}
+.page-title-content {
+  h2 {
+      margin-bottom: 0;
+      color: $white-color;
+      font: {
+          size: 45px;
+          weight: 800;
+      };
+  }
+  ul {
+      padding-left: 0;
+      list-style-type: none;
+      margin: {
+          top: 15px;
+          bottom: 0;
+      };
+      li {
+          display: inline-block;
+          margin-right: 24px;
+          color: $white-color;
+          position: relative;
+          font: {
+              size: 16px;
+              weight: 600;
+          };
+          a {
+              display: inline-block;
+              color: $white-color;
+
+          }
+          &::before {
+              content: '';
+              position: absolute;
+              right: -12px;
+              top: 7px;
+              width: 1px;
+              height: 12px;
+              background-color: $white-color;
+          }
+          &:last-child {
+              margin-right: 0;
+
+              &::before {
+                  display: none;
+              }
+          }
+      }
+  }
+}
+
 // <------------------------------------------------------------------------------------------------------------------------>
 // responsive
 @media only #{$media} and ($feature_max : $value_two) {

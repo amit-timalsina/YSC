@@ -20,6 +20,7 @@ a {
 a:hover {
   text-decoration: none;
   color: #4f87fb;
+  cursor: pointer;
 }
 
 img {
@@ -325,11 +326,11 @@ h6 {
 }
 
 .main-banner.banner-bg1 {
-  background-image: url(../img/image1.jpg);
+  background-image: url(../img/banner1.png);
 }
 
 .main-banner.banner-bg2 {
-  background-image: url(../img/image2.jpg);
+  background-image: url(../img/robotics.png);
 }
 
 .main-banner.banner-bg3 {
@@ -1121,6 +1122,79 @@ Go Top CSS
 
 .navbar-nav .nav-item:hover a, .navbar-nav .nav-item.active a {
   color: #4f87fb;
+}
+
+/*================================================
+Page Title Area CSS
+=================================================*/
+.page-title-area {
+  position: relative;
+  z-index: 1;
+  background-color: #4f87fb;
+  background-image: url(../img/logo.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 150px;
+  padding-bottom: 130px;
+}
+
+.page-title-area::before {
+  width: 100%;
+  height: 100%;
+  background-color: #130947;
+  opacity: 0.75;
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+}
+
+.page-title-content h2 {
+  margin-bottom: 0;
+  color: #ffffff;
+  font-size: 45px;
+  font-weight: 800;
+}
+
+.page-title-content ul {
+  padding-left: 0;
+  list-style-type: none;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.page-title-content ul li {
+  display: inline-block;
+  margin-right: 24px;
+  color: #ffffff;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.page-title-content ul li a {
+  display: inline-block;
+  color: #ffffff;
+}
+
+.page-title-content ul li::before {
+  content: '';
+  position: absolute;
+  right: -12px;
+  top: 7px;
+  width: 1px;
+  height: 12px;
+  background-color: #ffffff;
+}
+
+.page-title-content ul li:last-child {
+  margin-right: 0;
+}
+
+.page-title-content ul li:last-child::before {
+  display: none;
 }
 
 @media only screen and (max-width: 767px) {
