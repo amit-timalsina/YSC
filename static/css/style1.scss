@@ -28,6 +28,17 @@ body {
 :focus {
   outline: 0 !important;
 }
+.grid {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  flex-flow: row wrap;
+}
+.grid > [class*="column-"] {
+  display: block;
+}
 a {
   text-decoration: none;
   color: $black-color;
@@ -561,7 +572,121 @@ h6 {
 .container {
   max-width: 1230px;
 }
+/*================================================
+values Area CSS
+=================================================*/
+.values-area {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background: {
+      // color: #f1f5fe;
+      image: url(../../assets/img/values-bg.jpg);
+      position: -270px center;
+      size: cover;
+      repeat: no-repeat;
+  };
+  padding-top: 0;
+}
+.values-image {
+  position: relative;
+  left: -30px;
+}
+.values-content {
+  padding-left: 25px;
 
+  .sub-title {
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      color: $main-color;
+      display: block;
+      font: {
+          size: 14px;
+          weight: 600;
+      };
+  }
+  h2 {
+      margin-bottom: 0;
+      font: {
+          size: 35px;
+          weight: 800;
+      };
+  }
+  p {
+      margin: {
+          bottom: 0;
+          top: 10px;
+      };
+  }
+  ul {
+      padding-left: 0;
+      list-style-type: none;
+      display: flex;
+      flex-wrap: wrap;
+      margin: {
+          left: -10px;
+          right: -10px;
+          bottom: 0;
+          top: 10px;
+      };
+      li {
+          flex: 0 0 50%;
+          max-width: 50%;
+          padding: {
+              left: 10px;
+              right: 10px;
+          };
+          span {
+              margin-top: 20px;
+              display: block;
+              background-color: $white-color;
+              position: relative;
+              padding: 15px 15px 15px 55px;
+              color: $black-color;
+              transition: $transition;
+              border-radius: 0 5px 5px 0;
+              z-index: 1;
+              font: {
+                  size: 17px;
+                  weight: 780;
+              };
+              &::before {
+                  width: 3px;
+                  height: 100%;
+                  z-index: -1;
+                  background-color: $black-color;
+                  content: '';
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  border-radius: 0 5px 5px 0;
+                  transition: $transition;
+              }
+              i {
+                  position: absolute;
+                  left: 15px;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  width: 30px;
+                  height: 30px;
+                  text-align: center;
+                  line-height: 30px;
+                  color: $black-color;
+                  font-size: 14px;
+                  background-color: #e5ecfe;
+                  border-radius: 50%;
+              }
+              &:hover {
+                  color: $white-color;
+
+                  &::before {
+                      width: 100%;
+                  }
+              }
+          }
+      }
+  }
+} 
 /*================================================
 Footer Area CSS
 =================================================*/
@@ -1289,12 +1414,64 @@ Page Title Area CSS
   .blockquote p{
     font-size: 13px;
   }
+  .values-area {
+    background-image: unset !important;
+
+    .row {
+        .col-lg-6 {
+            &:nth-child(1) {
+                order: 2;
+            }
+            &:nth-child(2) {
+                order: 1;
+            }
+        }
+    }
+}
+.values-content {
+    text-align: center;
+    padding-left: 0;
+
+    .sub-title {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+    h2 {
+        font-size: 21px;
+    }
+    ul {
+        text-align: left;
+
+        li {
+            flex: 0 0 100%;
+            max-width: 100%;
+
+            span {
+                font-size: 13px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+.values-image {
+    left: 0;
+    text-align: center;
+    margin-top: 30px;
+}
 }
 
 @media only #{$media} and ($feature_min : $value_one) and ($feature_max : $value_two) {
   .container {
     max-width: 540px;
   }
+  .values-content {
+    ul {
+        li {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+}
 }
 
 @media only #{$media} and ($feature_min : $value_three) and ($feature_max : $value_four) {
@@ -1353,6 +1530,42 @@ Page Title Area CSS
   .subscribe-area {
     text-align: center;
   }
+  .values-area {
+    background-image: unset !important;
+
+    .row {
+        .col-lg-6 {
+            &:nth-child(1) {
+                order: 2;
+            }
+            &:nth-child(2) {
+                order: 1;
+            }
+        }
+    }
+}
+.values-image {
+    margin-top: 30px;
+    left: 0;
+    text-align: center;
+}
+.values-content {
+    text-align: center;
+    padding-left: 0;
+
+    h2 {
+        font-size: 30px;
+    }
+    ul {
+        text-align: left;
+
+        li {
+            span {
+                font-size: 15px;
+            }
+        }
+    }
+}
 }
 @media only #{$media} and ($feature_min : $value_five) and ($feature_max : $value_six) {
   .container {
@@ -1368,4 +1581,26 @@ Page Title Area CSS
       font-size: 22px;
     }
   }
+  .values-area {
+    background-position: -340px center;
+}
+.values-image {
+    left: 0;
+}
+.values-content {
+    background-color: #f1f5fe;
+
+    ul {
+        li {
+            span {
+                padding-left: 15px;
+                font-size: 16px;
+
+                i {
+                    display: none;
+                }
+            }
+        }
+    }
+}
 }
