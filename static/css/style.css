@@ -151,8 +151,12 @@ Flaticon icon font: Flaticon
   margin-top: -50px;
 }
 
-
-
+.events-title{
+  padding: 15px;
+}
+#past, #upcoming{
+  padding: 15px;
+}
 #main-footer {
   background: #42B6FF ;
   color: #fff;
