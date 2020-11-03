@@ -55,10 +55,14 @@
   max-width: 75rem;
   width: 100%;
 }
-.about img {
+.about .img1 {
 	width: 100%;
   height: 100%;
-  object-position: center;
+  object-fit:cover;
+}
+.about .img1 {
+	width: 100%;
+  height: 30em;
   object-fit: fill;
 }
 .column-xs-12 {
@@ -74,13 +78,13 @@
     flex-basis: 33.3333333333%;
     max-width: 33.3333333333%;
   }
-  .column-md-7 {
-    flex-basis: 58.3333333333%;
-    max-width: 58.3333333333%;
-  }
   .column-md-5 {
-    flex-basis: 41.6666666667%;
-    max-width: 41.6666666667%;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  .column-md-7 {
+    flex-basis: 50%;
+    max-width:  50%
   }
   .about img {
     height: 30rem;
@@ -381,7 +385,7 @@ main {
         </div>
         <div class="column-xs-12 column-md-5">
           <br><br><br>
-          <img src="./img/meeting.jpg">
+          <img src="./img/meeting.jpg" alt='Discussion with Rameshwar Sir.' class="img1">
         </div>
       </section>
     </div>
@@ -391,7 +395,7 @@ main {
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12">
                 <div class="values-image">
-                    <img src="./img/logo.png" alt="image">
+                    <img src="./img/logo.png" alt="Logo of YSC" class="img2">
                 </div>
             </div>
 
@@ -421,9 +425,9 @@ main {
     <div class="option active" style="--optionBackground:url(./img/rameshwar.jpg);">
        <div class="shadow"></div>
        <div class="label">
-          <div class="icon">
-            <i class='bx bxl-linkedin'></i>
-          </div>
+        <div class="icon">
+          <a target="_blank" href="https://www.facebook.com/ram.adhi.9/"><i class='bx bxl-facebook'></i></a>
+        </div>
           <div class="info">
              <div class="main">Rameshwar Adhikari</div>
              <div class="sub">Father of YSC</div>
@@ -516,7 +520,7 @@ main {
         <div class="col-lg-3 col-md-6 col-sm-6">
           <div class="single-footer-widget">
             <a routerLink="/" class="logo">
-              <img src="img/logo.png" alt="logo" height="1" />
+              <img src="img/logo2.png" alt="logo" height="1" />
             </a>
             <p>
               It's an initiative by Research Centre for Applied Science & Technology for joining Nepali research-oriented highschoolers.

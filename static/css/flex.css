@@ -61,11 +61,12 @@
 }
 @media screen and (max-width: 478px) {
   .bod .options {
-    min-width: 280px;
+    min-width: 400px;
+
   }
-  .bod .options .option:nth-child(2) {
+  /* .bod .options .option:nth-child(2) {
     display: none;
-  }
+  } */
 }
 .bod .options .option {
   position: relative;

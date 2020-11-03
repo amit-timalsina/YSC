@@ -47,7 +47,10 @@ Flaticon icon font: Flaticon
 
 
 
-
+#img{
+  width: auto;
+  height: 20em;
+}
 #testimonials{
   padding: 2em;
 }
