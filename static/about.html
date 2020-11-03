@@ -11,312 +11,357 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
   <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.6/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/flex.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/flex.css" />
   <link rel="stylesheet" href="css/style1.css">
   <link rel="stylesheet" href="css/animate.min.css" />
-
-  <title>About Us-Young Scientists Community</title>
+  <link rel="shortcut icon" href="img/logo2.png" type="image/x-icon">
+  <title>About Us - Young Scientists Community</title>
   <style>
     @import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,500|Roboto:400,700');
-    
+
     blockquote {
-  font-style: italic;
-  text-align: center;
-  width: 40rem;
-  height: auto;
-  max-width: 100%;
-  margin: auto;
-  display: flex;
-  align-items: center;
-}
-.section-heading {
-  padding-right: 3.5em;
-  -webkit-transform: rotate(0) translateX(0);
-          transform: rotate(0) translateX(0);
-}
-.intro {
-  margin: 1rem 0;
-  padding: 0;
-  width: 100%;
-}
-.about .container {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  /* color: $text; */
-  /* background: $white; */
-  text-rendering: optimizeLegibility;
-  margin: auto;
-  padding: 0 1rem;
-  max-width: 75rem;
-  width: 100%;
-}
-.about img {
-	width: 100%;
-  height: 100%;
-  object-position: center;
-  object-fit: fill;
-}
-.column-xs-12 {
-  flex-basis: 100%;
-  max-width: 100%;
-}
-@media (min-width: 62rem) {
-  .column-md-1 {
-    flex-basis: 8.3333333333%;
-    max-width: 8.3333333333%;
-  }
-  .column-md-4 {
-    flex-basis: 33.3333333333%;
-    max-width: 33.3333333333%;
-  }
-  .column-md-7 {
-    flex-basis: 58.3333333333%;
-    max-width: 58.3333333333%;
-  }
-  .column-md-5 {
-    flex-basis: 41.6666666667%;
-    max-width: 41.6666666667%;
-  }
-  .about img {
-    height: 30rem;
-  }
+      font-style: italic;
+      text-align: center;
+      width: 40rem;
+      height: auto;
+      max-width: 100%;
+      margin: auto;
+      display: flex;
+      align-items: center;
+    }
 
-  .section-heading {
-    position: absolute;
-    -webkit-transform-origin: top left;
-            transform-origin: top left;
-    -webkit-transform: rotate(-90deg) translateX(-100%);
-            transform: rotate(-90deg) translateX(-100%);
-  }
+    .section-heading {
+      padding-right: 3.5em;
+      -webkit-transform: rotate(0) translateX(0);
+      transform: rotate(0) translateX(0);
+    }
 
-  .intro {
-    padding: 1rem;
-  }
+    .intro {
+      margin: 1rem 0;
+      padding: 0;
+      width: 100%;
+    }
 
-  blockquote {
-    width: 30rem;
-    height: 40rem;
-  }
-}
-main {
-  padding: 2rem 0;
-}
-.bod {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-          flex-direction: row;
-  -webkit-box-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-          align-items: center;
-  overflow: hidden;
-  height: 100vh;
-  font-family: 'Roboto', sans-serif;
-}
-.bod .credit {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  color: #000;
-}
-.bod .options {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-          flex-direction: row;
-  -webkit-box-align: stretch;
-          align-items: stretch;
-  overflow: hidden;
-  min-width: 600px;
-  max-width: 900px;
-  width: calc(100% - 100px);
-  height: 400px;
-}
-@media screen and (max-width: 718px) {
-  .bod .options {
-    min-width: 520px;
-  }
-  .bod .options .option:nth-child(5) {
-    display: none;
-  }
-}
-@media screen and (max-width: 638px) {
-  .bod .options {
-    min-width: 440px;
-  }
-  .bod .options .option:nth-child(4) {
-    display: none;
-  }
-}
-@media screen and (max-width: 558px) {
-  .bod .options {
-    min-width: 360px;
-  }
-  .bod .options .option:nth-child(3) {
-    display: none;
-  }
-}
-@media screen and (max-width: 478px) {
-  .bod .options {
-    min-width: 280px;
-  }
-  .bod .options .option:nth-child(2) {
-    display: none;
-  }
-}
-.bod .options .option {
-  position: relative;
-  overflow: hidden;
-  min-width: 60px;
-  margin: 10px;
-  background: var(--optionBackground, var(--defaultBackground, #E6E9ED));
-  background-size: auto 120%;
-  background-position: center;
-  cursor: pointer;
-  -webkit-transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-}
-.bod .options .option:nth-child(1) {
-  --defaultBackground:#ED5565;
-}
-.bod .options .option:nth-child(2) {
-  --defaultBackground:#FC6E51;
-}
-.bod .options .option:nth-child(3) {
-  --defaultBackground:#FFCE54;
-}
-.bod .options .option:nth-child(4) {
-  --defaultBackground:#2ECC71;
-}
-.bod .options .option:nth-child(5) {
-  --defaultBackground:#5D9CEC;
-}
-.bod .options .option:nth-child(6) {
-  --defaultBackground:#AC92EC;
-}
-.bod .options .option.active {
-  -webkit-box-flex: 10000;
-          flex-grow: 10000;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  max-width: 600px;
-  margin: 0px;
-  border-radius: 40px;
-  background-size: auto 100%;
-  /*&:active {
+    .about .container {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      /* color: $text; */
+      /* background: $white; */
+      text-rendering: optimizeLegibility;
+      margin: auto;
+      padding: 0 1rem;
+      max-width: 75rem;
+      width: 100%;
+    }
+
+    .about img {
+      width: 100%;
+      height: 100%;
+      object-position: center;
+      object-fit: fill;
+    }
+
+    .column-xs-12 {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+
+    @media (min-width: 62rem) {
+      .column-md-1 {
+        flex-basis: 8.3333333333%;
+        max-width: 8.3333333333%;
+      }
+
+      .column-md-4 {
+        flex-basis: 33.3333333333%;
+        max-width: 33.3333333333%;
+      }
+
+      .column-md-7 {
+        flex-basis: 58.3333333333%;
+        max-width: 58.3333333333%;
+      }
+
+      .column-md-5 {
+        flex-basis: 41.6666666667%;
+        max-width: 41.6666666667%;
+      }
+
+      .about img {
+        height: 30rem;
+      }
+
+      .section-heading {
+        position: absolute;
+        -webkit-transform-origin: top left;
+        transform-origin: top left;
+        -webkit-transform: rotate(-90deg) translateX(-100%);
+        transform: rotate(-90deg) translateX(-100%);
+      }
+
+      .intro {
+        padding: 1rem;
+      }
+
+      blockquote {
+        width: 30rem;
+        height: 40rem;
+      }
+    }
+
+    main {
+      padding: 2rem 0;
+    }
+
+    .bod {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      align-items: center;
+      overflow: hidden;
+      height: 100vh;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .bod .credit {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      color: #000;
+    }
+
+    .bod .options {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      flex-direction: row;
+      -webkit-box-align: stretch;
+      align-items: stretch;
+      overflow: hidden;
+      min-width: 600px;
+      max-width: 900px;
+      width: calc(100% - 100px);
+      height: 400px;
+    }
+
+    @media screen and (max-width: 718px) {
+      .bod .options {
+        min-width: 520px;
+      }
+
+      .bod .options .option:nth-child(5) {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 638px) {
+      .bod .options {
+        min-width: 440px;
+      }
+
+      .bod .options .option:nth-child(4) {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 558px) {
+      .bod .options {
+        min-width: 360px;
+      }
+
+      .bod .options .option:nth-child(3) {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 478px) {
+      .bod .options {
+        min-width: 280px;
+      }
+
+      .bod .options .option:nth-child(2) {
+        display: none;
+      }
+    }
+
+    .bod .options .option {
+      position: relative;
+      overflow: hidden;
+      min-width: 60px;
+      margin: 10px;
+      background: var(--optionBackground, var(--defaultBackground, #E6E9ED));
+      background-size: auto 120%;
+      background-position: center;
+      cursor: pointer;
+      -webkit-transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+      transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+    }
+
+    .bod .options .option:nth-child(1) {
+      --defaultBackground: #ED5565;
+    }
+
+    .bod .options .option:nth-child(2) {
+      --defaultBackground: #FC6E51;
+    }
+
+    .bod .options .option:nth-child(3) {
+      --defaultBackground: #FFCE54;
+    }
+
+    .bod .options .option:nth-child(4) {
+      --defaultBackground: #2ECC71;
+    }
+
+    .bod .options .option:nth-child(5) {
+      --defaultBackground: #5D9CEC;
+    }
+
+    .bod .options .option:nth-child(6) {
+      --defaultBackground: #AC92EC;
+    }
+
+    .bod .options .option.active {
+      -webkit-box-flex: 10000;
+      flex-grow: 10000;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      max-width: 600px;
+      margin: 0px;
+      border-radius: 40px;
+      background-size: auto 100%;
+      /*&:active {
      transform:scale(0.9);
   }*/
-}
-.bod .options .option.active .shadow {
-  box-shadow: inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
-}
-.bod .options .option.active .label {
-  bottom: 20px;
-  left: 20px;
-}
-.bod .options .option.active .label .info > div {
-  left: 0px;
-  opacity: 1;
-}
-.bod .options .option:not(.active) {
-  -webkit-box-flex: 1;
-          flex-grow: 1;
-  border-radius: 30px;
-}
-.bod .options .option:not(.active) .shadow {
-  bottom: -40px;
-  box-shadow: inset 0 -120px 0px -120px black, inset 0 -120px 0px -100px black;
-}
-.bod .options .option:not(.active) .label {
-  bottom: 10px;
-  left: 10px;
-}
-.bod .options .option:not(.active) .label .info > div {
-  left: 20px;
-  opacity: 0;
-}
-.bod .options .option .shadow {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  height: 120px;
-  -webkit-transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-}
-.bod .options .option .label {
-  display: -webkit-box;
-  display: flex;
-  position: absolute;
-  right: 0px;
-  height: 40px;
-  -webkit-transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-}
-.bod .options .option .label .icon {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-          flex-direction: row;
-  -webkit-box-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-          align-items: center;
-  min-width: 40px;
-  max-width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  background-color: white;
-  color: var(--defaultBackground);
-}
-.bod .options .option .label .info {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
-  -webkit-box-pack: center;
-          justify-content: center;
-  margin-left: 10px;
-  color: white;
-  white-space: pre;
-}
-.bod .options .option .label .info > div {
-  position: relative;
-  -webkit-transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
-  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
-}
-.bod .options .option .label .info .main {
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-.bod .options .option .label .info .sub {
-  -webkit-transition-delay: .1s;
-          transition-delay: .1s;
-}
-.heading1 {
-  width: 40%;
-  margin-left: 9rem;
-  /* padding-left: 9rem; */
-  align-items: center;
-  font-weight: 900;
-  font-size: 1.618rem;
-  text-transform: uppercase;
-  letter-spacing: .1ch;
-  line-height: 1;
-  padding-bottom: .5em;
-  margin-bottom: 1rem;
-  position: relative;
-}
+    }
+
+    .bod .options .option.active .shadow {
+      box-shadow: inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
+    }
+
+    .bod .options .option.active .label {
+      bottom: 20px;
+      left: 20px;
+    }
+
+    .bod .options .option.active .label .info>div {
+      left: 0px;
+      opacity: 1;
+    }
+
+    .bod .options .option:not(.active) {
+      -webkit-box-flex: 1;
+      flex-grow: 1;
+      border-radius: 30px;
+    }
+
+    .bod .options .option:not(.active) .shadow {
+      bottom: -40px;
+      box-shadow: inset 0 -120px 0px -120px black, inset 0 -120px 0px -100px black;
+    }
+
+    .bod .options .option:not(.active) .label {
+      bottom: 10px;
+      left: 10px;
+    }
+
+    .bod .options .option:not(.active) .label .info>div {
+      left: 20px;
+      opacity: 0;
+    }
+
+    .bod .options .option .shadow {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      height: 120px;
+      -webkit-transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+      transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+    }
+
+    .bod .options .option .label {
+      display: -webkit-box;
+      display: flex;
+      position: absolute;
+      right: 0px;
+      height: 40px;
+      -webkit-transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+      transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+    }
+
+    .bod .options .option .label .icon {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      align-items: center;
+      min-width: 40px;
+      max-width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      background-color: white;
+      color: var(--defaultBackground);
+    }
+
+    .bod .options .option .label .info {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      justify-content: center;
+      margin-left: 10px;
+      color: white;
+      white-space: pre;
+    }
+
+    .bod .options .option .label .info>div {
+      position: relative;
+      -webkit-transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+      transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+    }
+
+    .bod .options .option .label .info .main {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .bod .options .option .label .info .sub {
+      -webkit-transition-delay: .1s;
+      transition-delay: .1s;
+    }
+
+    .heading1 {
+      width: 40%;
+      margin-left: 9rem;
+      /* padding-left: 9rem; */
+      align-items: center;
+      font-weight: 900;
+      font-size: 1.618rem;
+      text-transform: uppercase;
+      letter-spacing: .1ch;
+      line-height: 1;
+      padding-bottom: .5em;
+      margin-bottom: 1rem;
+      position: relative;
+    }
   </style>
 </head>
 
@@ -353,16 +398,17 @@ main {
       <section class="grid info">
         <div class="column-xs-12 column-md-1">
           <div class="about">
-          <h1 class="section-heading">About YSC</h1>
+            <h1 class="section-heading">About YSC</h1>
           </div>
         </div>
         <div class="column-xs-12 column-md-4">
-          <img src="./img/logo2.png">
+          <img src="img/logo2.png" class="img img-responsive">
         </div>
         <div class="column-xs-12 column-md-7">
           <div class="intro">
             <h2 style="padding-left: 0.8em;">Knowledge from Highschoolers to the Highschoolers</h2>
-            <p style="padding-left: 1.7em;">YSC provides various seminars and training to Highschoolers in the Nepal. Upgrade your skills through us
+            <p style="padding-left: 1.7em;">YSC provides various seminars and training to Highschoolers in the Nepal.
+              Upgrade your skills through us
               from novice to expert on various sub-domains of artificial
               intelligence and robotics.</p>
             <p style="padding-left: 1.7em;">YSC's mission is to create a platform for the youngsters to take in,
@@ -381,70 +427,73 @@ main {
         </div>
         <div class="column-xs-12 column-md-5">
           <br><br><br>
-          <img src="./img/meeting.jpg">
+          <img src="img/meeting.jpg" height=20%>
         </div>
       </section>
     </div>
   </main>
   <section class="values-area pt-10">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6 col-md-12">
-                <div class="values-image">
-                    <img src="./img/logo.png" alt="image">
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-md-12">
-                <div class="values-content">
-                    <span class="sub-title">Values</span>
-                    <h2>YSC's values</h2>
-                    <p></p>
-
-                    <ul>
-                        <li><span><i class='flaticon-tick'></i> Learn and Innovote</span></li>
-                        <li><span><i class='flaticon-tick'></i> Learning and Teaching</span></li>
-                        <li><span><i class='flaticon-tick'></i> Explore</span></li>
-                        <li><span><i class='flaticon-tick'></i> Never stop learning</span></li>
-                        <li><span><i class='flaticon-tick'></i> Education to all</span></li>
-                        <li><span><i class='flaticon-tick'></i> Always</span></li>
-                    </ul>
-                </div>
-            </div>
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-12">
+          <div class="values-image">
+            <img src="./img/logo.png" alt="image">
+          </div>
         </div>
-    </div>
-</section>
-<div class="bod" style="color:rgb(209, 202, 202); height: 500px; margin-top: 50px; background-color: #217ee9d3 ; z-index: -1;"  data-aos="fade-up" >
-  <h1 class="heading1">Pioneers</h1>
 
-  <div class="options">
-    <div class="option active" style="--optionBackground:url(./img/rameshwar.jpg);">
-       <div class="shadow"></div>
-       <div class="label">
+        <div class="col-lg-6 col-md-12">
+          <div class="values-content">
+            <span class="sub-title">Values</span>
+            <h2>YSC's values</h2>
+            <p></p>
+
+            <ul>
+              <li><span><i class='flaticon-tick'></i> Learn and Innovote</span></li>
+              <li><span><i class='flaticon-tick'></i> Learning and Teaching</span></li>
+              <li><span><i class='flaticon-tick'></i> Explore</span></li>
+              <li><span><i class='flaticon-tick'></i> Never stop learning</span></li>
+              <li><span><i class='flaticon-tick'></i> Education to all</span></li>
+              <li><span><i class='flaticon-tick'></i> Always</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="bod"
+    style="color:rgb(209, 202, 202); height: 500px; margin-top: 50px; background-color: #217ee9d3 ; z-index: -1;"
+    data-aos="fade-up">
+    <h1 class="heading1">Pioneers</h1>
+
+    <div class="options">
+      <div class="option active" style="--optionBackground:url(./img/rameshwar.jpg);">
+        <div class="shadow"></div>
+        <div class="label">
           <div class="icon">
             <i class='bx bxl-linkedin'></i>
           </div>
           <div class="info">
-             <div class="main">Rameshwar Adhikari</div>
-             <div class="sub">Father of YSC</div>
+            <div class="main">Rameshwar Adhikari</div>
+            <div class="sub">Father of YSC</div>
           </div>
-       </div>
-    </div>
-    <div class="option" style="--optionBackground:url(./img/amittimalsina.jpg);">
-       <div class="shadow"></div>
-       <div class="label">
+        </div>
+      </div>
+      <div class="option" style="--optionBackground:url(./img/amittimalsina.jpg);">
+        <div class="shadow"></div>
+        <div class="label">
           <div class="icon">
-            <a target="_blank" href="https://www.linkedin.com/in/amit-timalsina-0699401aa/"><i class='bx bxl-linkedin'></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/amit-timalsina-0699401aa/"><i
+                class='bx bxl-linkedin'></i></a>
           </div>
           <div class="info">
             <div class="main">Amit Timalsina</div>
             <div class="sub">President and AI Lead</div>
           </div>
-       </div>
-    </div>
-    <div class="option" style="--optionBackground:url(./img/suraj.jpg);">
-       <div class="shadow"></div>
-       <div class="label">
+        </div>
+      </div>
+      <div class="option" style="--optionBackground:url(./img/suraj.jpg);">
+        <div class="shadow"></div>
+        <div class="label">
           <div class="icon">
             <a target="_blank" href="https://www.facebook.com/sutha064/"><i class='bx bxl-facebook'></i></a>
           </div>
@@ -452,48 +501,50 @@ main {
             <div class="main">Suraj Thapa</div>
             <div class="sub">Vice-President</div>
           </div>
-       </div>
-    </div>
-    <div class="option" style="--optionBackground:url(./img/lucky.jpg);">
-       <div class="shadow"></div>
-       <div class="label">
-        <div class="icon">
-          <a target="_blank" href="https://www.linkedin.com/in/lucky-sah-1081151b6/"><i class='bx bxl-linkedin'></i></a>
         </div>
-        <div class="info">
-          <div class="main">Lucky sah</div>
-          <div class="sub">Secretary</div>
+      </div>
+      <div class="option" style="--optionBackground:url(./img/lucky.jpg);">
+        <div class="shadow"></div>
+        <div class="label">
+          <div class="icon">
+            <a target="_blank" href="https://www.linkedin.com/in/lucky-sah-1081151b6/"><i
+                class='bx bxl-linkedin'></i></a>
           </div>
-       </div>
-    </div>
-    <div class="option" style="--optionBackground:url(./img/ronen.jpg);">
-       <div class="shadow"></div>
-       <div class="label">
-        <div class="icon">
-          <a target="_blank" href="https://www.facebook.com/ronen.acharya"><i class='bx bxl-facebook'></i></a>
+          <div class="info">
+            <div class="main">Lucky sah</div>
+            <div class="sub">Secretary</div>
+          </div>
         </div>
-        <div class="info">
-             <div class="main">Ronen Aacharya</div>
-             <div class="sub">Technical Department Head</div>
+      </div>
+      <div class="option" style="--optionBackground:url(./img/ronen.jpg);">
+        <div class="shadow"></div>
+        <div class="label">
+          <div class="icon">
+            <a target="_blank" href="https://www.facebook.com/ronen.acharya"><i class='bx bxl-facebook'></i></a>
           </div>
-       </div>
-    </div>
-    <div class="option" style="--optionBackground:url(./img/prabesh.jpg);">
-       <div class="shadow"></div>
-       <div class="label">
-        <div class="icon">
-          <a target="_blank" href="https://www.linkedin.com/in/prabesh-shrestha-6aaa141b6/"><i class='bx bxl-linkedin'></i></a>
+          <div class="info">
+            <div class="main">Ronen Aacharya</div>
+            <div class="sub">Technical Department Head</div>
+          </div>
         </div>
-        <div class="info">
-          <div class="main">Prabesh Shrestha</div>
-          <div class="sub">Robotics Lead</div>
+      </div>
+      <div class="option" style="--optionBackground:url(./img/prabesh.jpg);">
+        <div class="shadow"></div>
+        <div class="label">
+          <div class="icon">
+            <a target="_blank" href="https://www.linkedin.com/in/prabesh-shrestha-6aaa141b6/"><i
+                class='bx bxl-linkedin'></i></a>
           </div>
-       </div>
+          <div class="info">
+            <div class="main">Prabesh Shrestha</div>
+            <div class="sub">Robotics Lead</div>
+          </div>
+        </div>
+      </div>
+
     </div>
-  
   </div>
-</div>
- <footer class="footer-area">
+  <footer class="footer-area">
     <div class="container">
       <div class="subscribe-area">
         <div class="row align-items-center">
@@ -549,21 +600,10 @@ main {
             <h3>Quick Links</h3>
             <ul class="footer-quick-links">
               <li><a href="index.html">Home</a></li>
-<<<<<<< HEAD
-              <<<<<<< HEAD <li><a href='about.html'>About</a></li>
-                <li><a href='#'>Events</a></li>
-                =======
-                <li><a href='#'>About</a></li>
-                <li><a href='events.html'>Events</a></li>
-                >>>>>>> 3ec4266d2c0edddca271a0c02266674613ce2ad7
-                <li><a href='contact.html'>Contact</a></li>
-                <li><a href="#">YSC(Coming soon)</a></li>
-=======
               <li><a href='#'>About</a></li>
               <li><a href='events.html'>Events</a></li>
               <li><a href='contact.html'>Contact</a></li>
               <li><a href="#">YSC(Coming soon)</a></li>
->>>>>>> 25f87eae6306ede0eb919c087e2d668876316ee6
             </ul>
           </div>
         </div>
@@ -643,10 +683,10 @@ main {
   </footer> -->
   <div class="go-top"><i class='bx bx-up-arrow-alt' id='myBtn'></i></div>
 </body>
-<<<<<<< HEAD
 <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
+<script src="js/flex.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
   integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
@@ -655,22 +695,6 @@ main {
 <script>
   // Get the current year for the copyright
   $('#year').text(new Date().getFullYear());
-=======
-  <script src="http://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="js/main.js"></script>
-  <script src="js/flex.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
-  <script>
-    // Get the current year for the copyright
-    $('#year').text(new Date().getFullYear());
->>>>>>> 25f87eae6306ede0eb919c087e2d668876316ee6
 
   $('.slider').slick({
     infinite: true,
