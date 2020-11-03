@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
   <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.6/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/flex.css" />
+    <!-- <link rel="stylesheet" href="css/flex.css" /> -->
   <link rel="stylesheet" href="css/style1.css">
   <link rel="stylesheet" href="css/animate.min.css" />
 
@@ -139,40 +139,56 @@ main {
   -webkit-box-align: stretch;
           align-items: stretch;
   overflow: hidden;
-  min-width: 600px;
+  min-width: 400px;
   max-width: 900px;
-  width: calc(100% - 100px);
+  width: calc(100% - 300px);
   height: 400px;
 }
 @media screen and (max-width: 718px) {
   .bod .options {
     min-width: 520px;
   }
-  .bod .options .option:nth-child(5) {
+  /* .bod .options .option:nth-child(1) {
     display: none;
-  }
+  } */
 }
 @media screen and (max-width: 638px) {
   .bod .options {
-    min-width: 440px;
+    min-width: 500px;
   }
-  .bod .options .option:nth-child(4) {
+  .bod .options .option:nth-child(5) {
     display: none;
   }
 }
 @media screen and (max-width: 558px) {
   .bod .options {
-    min-width: 360px;
+    min-width: 400px;
+  }
+  /* .bod .options .option:nth-child(4) {
+    display: none;
+  } */
+}
+@media screen and (max-width: 478px) {
+  .bod .options {
+    width: 200px;
+  }
+  /* .bod .options .option:nth-child(3) {
+    display: none;
+  } */
+}
+@media screen and (max-width: 400px) {
+  .bod .options {
+    width: 300px;
   }
   .bod .options .option:nth-child(3) {
     display: none;
   }
 }
-@media screen and (max-width: 478px) {
+@media screen and (max-width: 350px) {
   .bod .options {
-    min-width: 280px;
+    width: 250px;
   }
-  .bod .options .option:nth-child(2) {
+  .bod .options .option:nth-child(1) {
     display: none;
   }
 }
@@ -307,20 +323,7 @@ main {
   -webkit-transition-delay: .1s;
           transition-delay: .1s;
 }
-.heading1 {
-  width: 40%;
-  margin-left: 9rem;
-  /* padding-left: 9rem; */
-  align-items: center;
-  font-weight: 900;
-  font-size: 1.618rem;
-  text-transform: uppercase;
-  letter-spacing: .1ch;
-  line-height: 1;
-  padding-bottom: .5em;
-  margin-bottom: 1rem;
-  position: relative;
-}
+
   </style>
 </head>
 
@@ -420,7 +423,6 @@ main {
 </section>
 <div class="bod" style="color:rgb(209, 202, 202); height: 500px; margin-top: 50px; background-color: #217ee9d3 ; z-index: -1;"  data-aos="fade-up" >
   <h1 class="heading1">Pioneers</h1>
-
   <div class="options">
     <div class="option active" style="--optionBackground:url(./img/rameshwar.jpg);">
        <div class="shadow"></div>
@@ -665,5 +667,5 @@ main {
       slideToScroll: 1
     });
   </script>
-<script type="text/javascript" src="js/about.js"></script>
+
 </html>

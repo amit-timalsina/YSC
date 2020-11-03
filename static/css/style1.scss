@@ -1257,10 +1257,30 @@ Page Title Area CSS
       }
   }
 }
+.heading1 {
+  width: 20%;
+  margin: 0;
+  /* padding-left: 9rem; */
+  align-items: center;
+  font-weight: 900;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: .1ch;
+  line-height: 1;
+  padding-bottom: .5em;
+  margin-bottom: 1rem;
+  position: relative;
 
+}
 // <------------------------------------------------------------------------------------------------------------------------>
 // responsive
 @media only #{$media} and ($feature_max : $value_two) {
+
+  .heading1{
+width: 0;
+color: #217ee900;
+    
+  }
   .optional-btn {
     padding: 10px 15px 10px 35px;
     font-size: 12px;

@@ -1335,7 +1335,28 @@ Page Title Area CSS
   display: none;
 }
 
+.heading1 {
+  width: 20%;
+  margin: 0;
+  /* padding-left: 9rem; */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 900;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: .1ch;
+  line-height: 1;
+  padding-bottom: .5em;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
 @media only screen and (max-width: 767px) {
+  .heading1 {
+    width: 0;
+    color: #217ee900;
+  }
   .optional-btn {
     padding: 10px 15px 10px 35px;
     font-size: 12px;
