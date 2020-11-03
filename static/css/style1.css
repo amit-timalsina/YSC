@@ -125,6 +125,9 @@ h6 {
     padding-left: 15px;
     padding-right: 15px;
   }
+  .onepage-navbar.navbar .container .navbar-brand {
+    font-size: 14px;
+  }
   .onepage-navbar.navbar.is-sticky {
     border-bottom: none;
   }
@@ -326,11 +329,11 @@ h6 {
 }
 
 .main-banner.banner-bg1 {
-  background-image: url(../img/banner1.png);
+  background-image: url(../img/banner.png);
 }
 
 .main-banner.banner-bg2 {
-  background-image: url(../img/robotics.png);
+  background-image: url(../img/banner2.png);
 }
 
 .main-banner.banner-bg3 {
@@ -1199,11 +1202,15 @@ Page Title Area CSS
 
 @media only screen and (max-width: 767px) {
   .optional-btn {
-    padding: 11px 15px 10px 40px;
+    padding: 10px 15px 10px 35px;
     font-size: 12px;
   }
   .optional-btn i {
     left: 15px;
+  }
+  .color {
+    font-size: 30px;
+    padding-top: 0;
   }
   .main-banner {
     padding-top: 105px;
@@ -1230,7 +1237,6 @@ Page Title Area CSS
     margin-left: 5px;
   }
   .home-slides-two .main-banner {
-    height: auto;
     padding-top: 120px;
     padding-bottom: 150px;
   }

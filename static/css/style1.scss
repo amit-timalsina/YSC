@@ -157,6 +157,9 @@ h6 {
           left: 15px;
           right: 15px;
         }
+        .navbar-brand{
+          font-size: 14px
+        }
       }
       &.is-sticky {
         border-bottom: none;
@@ -380,11 +383,12 @@ h6 {
   padding-top: 30px;
   background: {
     position: center center;
+    // height: 100em !important;
     size: cover;
     repeat: no-repeat;
   }
   &.banner-bg1 {
-    background-image: url(../img/banner1.png);
+    background-image: url(../img/banner.png);
   }
   &.banner-bg2 {
     background-image: url(../img/banner2.png);
@@ -1133,12 +1137,17 @@ Page Title Area CSS
 // responsive
 @media only #{$media} and ($feature_max : $value_two) {
   .optional-btn {
-    padding: 11px 15px 10px 40px;
+    padding: 10px 15px 10px 35px;
     font-size: 12px;
 
     i {
       left: 15px;
     }
+  }
+
+  .color{
+    font-size: 30px;
+    padding-top: 0;
   }
   .main-banner {
     padding-top: 105px;
@@ -1168,7 +1177,6 @@ Page Title Area CSS
   }
   .home-slides-two {
     .main-banner {
-      height: auto;
       padding: {
         top: 120px;
         bottom: 150px;
