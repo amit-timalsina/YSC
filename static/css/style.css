@@ -74,10 +74,10 @@ Flaticon icon font: Flaticon
   font-weight: bold;
 }
 .navbar .nav-link:hover{
-  color: #4f87fb !important;
+  color: #217DE9 !important;
 }
 .icon-color {
-  color: #4f87fb ;
+  color: #217DE9 ;
 }
 
 .bg-nav {
@@ -85,7 +85,7 @@ Flaticon icon font: Flaticon
 }
 
 .navbar-nav .nav-item.active {
-  border-left: #4f87fb 3px solid;
+  border-left: #217DE9 3px solid;
 }
 
 .carousel-item {
@@ -191,7 +191,7 @@ Flaticon icon font: Flaticon
   text-align: center;
 }
 #staff{
-  background: #4F87FB;
+  background: #217DE9;
 }
 .row{
   margin: 15px;

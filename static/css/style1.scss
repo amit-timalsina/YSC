@@ -10,7 +10,7 @@ $value_six: 1199px;
 
 $font-family: "Open Sans", sans-serif;
 $font-size: 15px;
-$main-color: #4f87fb;
+$main-color: #217DE9;
 $black-color: #130947;
 $white-color: #ffffff;
 $optional-color: #606060;
@@ -1285,6 +1285,9 @@ Page Title Area CSS
     height: 40px;
     line-height: 41px;
     font-size: 25px;
+  }
+  .blockquote p{
+    font-size: 13px;
   }
 }
 
