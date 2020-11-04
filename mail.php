@@ -15,7 +15,7 @@ $email_to = "info.communityysc@gmail.com";
 
 $mail = new PHPMailer(true);
 
-$mail->isSMTP();                                            //
+$mail->isSMTP();                                            
 $mail->Host       = 'smtp.gmail.com';                    
 $mail->SMTPAuth   = true;                                   
 $mail->Username   = 'tempmail.ysc@gmail.com';                     
