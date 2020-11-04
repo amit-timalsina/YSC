@@ -11,11 +11,11 @@ $email = $_POST["email"];
 $phone = $_POST["phone"];
 $mes = $_POST["message"];
 
-$email_to = "apurba4790@gmail.com";
+$email_to = "info.communityysc@gmail.com";
 
 $mail = new PHPMailer(true);
 
-$mail->isSMTP();                                            //
+$mail->isSMTP();                                            
 $mail->Host       = 'smtp.gmail.com';                    
 $mail->SMTPAuth   = true;                                   
 $mail->Username   = 'tempmail.ysc@gmail.com';                     

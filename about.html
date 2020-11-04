@@ -15,7 +15,7 @@
     <!-- <link rel="stylesheet" href="css/flex.css" /> -->
   <link rel="stylesheet" href="css/style1.css">
   <link rel="stylesheet" href="css/animate.min.css" />
-
+  <link rel="shortcut icon" href="img/logo2.png" type="image/x-icon">
   <title>About Us-Young Scientists Community</title>
   <style>
     @import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,500|Roboto:400,700');
@@ -111,6 +111,8 @@ main {
   padding: 2rem 0;
 }
 .bod {
+  /* padding-right: 10em; */
+  padding: 0;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: horizontal;
@@ -121,7 +123,7 @@ main {
   -webkit-box-align: center;
           align-items: center;
   overflow: hidden;
-  height: 100vh;
+  height: 70vh;
   font-family: 'Roboto', sans-serif;
 }
 .bod .credit {
@@ -140,63 +142,41 @@ main {
           align-items: stretch;
   overflow: hidden;
   min-width: 400px;
-  max-width: 900px;
-  width: calc(100% - 300px);
-  height: 400px;
+  max-width: 600px;
+  width: calc(100% - 200px);
+  height: 300px;
+  position: relative;
 }
-@media screen and (max-width: 718px) {
-  .bod .options {
-    min-width: 520px;
-  }
-  /* .bod .options .option:nth-child(1) {
-    display: none;
-  } */
-}
+
 @media screen and (max-width: 638px) {
   .bod .options {
-    min-width: 500px;
+    min-width: 400px;
   }
-  .bod .options .option:nth-child(5) {
-    display: none;
+  .bod .options .option:nth-child(3) {
+    display: flex;
   }
 }
 @media screen and (max-width: 558px) {
   .bod .options {
     min-width: 400px;
   }
-  /* .bod .options .option:nth-child(4) {
-    display: none;
-  } */
+  .bod .options .option:nth-child(2) {
+    display: flex;
+  }
 }
 @media screen and (max-width: 478px) {
   .bod .options {
-    width: 200px;
-  }
-  /* .bod .options .option:nth-child(3) {
-    display: none;
-  } */
-}
-@media screen and (max-width: 400px) {
-  .bod .options {
-    width: 300px;
-  }
-  .bod .options .option:nth-child(3) {
-    display: none;
-  }
-}
-@media screen and (max-width: 350px) {
-  .bod .options {
-    width: 250px;
+    min-width: 370px;
   }
   .bod .options .option:nth-child(1) {
-    display: none;
+    display:flex;
   }
 }
 .bod .options .option {
   position: relative;
   overflow: hidden;
   min-width: 60px;
-  margin: 10px;
+  margin: 0 10px;
   background: var(--optionBackground, var(--defaultBackground, #E6E9ED));
   background-size: auto 120%;
   background-position: center;
@@ -212,15 +192,6 @@ main {
 }
 .bod .options .option:nth-child(3) {
   --defaultBackground:#FFCE54;
-}
-.bod .options .option:nth-child(4) {
-  --defaultBackground:#2ECC71;
-}
-.bod .options .option:nth-child(5) {
-  --defaultBackground:#5D9CEC;
-}
-.bod .options .option:nth-child(6) {
-  --defaultBackground:#AC92EC;
 }
 .bod .options .option.active {
   -webkit-box-flex: 10000;
@@ -324,6 +295,7 @@ main {
           transition-delay: .1s;
 }
 
+
   </style>
 </head>
 
@@ -421,7 +393,7 @@ main {
         </div>
     </div>
 </section>
-<div class="bod" style="color:rgb(209, 202, 202); height: 500px; margin-top: 50px; background-color: #217ee9d3 ; z-index: -1;"  data-aos="fade-up" >
+<div class="bod" style="color:rgb(209, 202, 202); height: 350px; padding-top: 50px; background-color: #217ee9d3 ; z-index: -1;"  data-aos="fade-up" >
   <h1 class="heading1">Pioneers</h1>
   <div class="options">
     <div class="option active" style="--optionBackground:url(./img/rameshwar.jpg);">
@@ -460,43 +432,47 @@ main {
           </div>
        </div>
     </div>
-    <div class="option" style="--optionBackground:url(./img/lucky.jpg);">
-       <div class="shadow"></div>
-       <div class="label">
-        <div class="icon">
-          <a target="_blank" href="https://www.linkedin.com/in/lucky-sah-1081151b6/"><i class='bx bxl-linkedin'></i></a>
-        </div>
-        <div class="info">
-          <div class="main">Lucky sah</div>
-          <div class="sub">Secretary</div>
-          </div>
+  </div>
+</div>
+<div class="bod" style="color:rgb(209, 202, 202); height: 350px; background-color: #217ee9d3 ; z-index: -2;"  data-aos="fade-up" >
+  <h1 class="heading2"></h1>
+  <div class="options">
+    <div class="option active" style="--optionBackground:url(./img/lucky.jpg);">
+      <div class="shadow"></div>
+      <div class="label">
+       <div class="icon">
+         <a target="_blank" href="https://www.linkedin.com/in/lucky-sah-1081151b6/"><i class='bx bxl-linkedin'></i></a>
        </div>
-    </div>
-    <div class="option" style="--optionBackground:url(./img/ronen.jpg);">
-       <div class="shadow"></div>
-       <div class="label">
-        <div class="icon">
-          <a target="_blank" href="https://www.facebook.com/ronen.acharya"><i class='bx bxl-facebook'></i></a>
-        </div>
-        <div class="info">
-             <div class="main">Ronen Aacharya</div>
-             <div class="sub">Technical Department Head</div>
-          </div>
+       <div class="info">
+         <div class="main">Lucky sah</div>
+         <div class="sub">Secretary</div>
+         </div>
+      </div>
+   </div>
+   <div class="option" style="--optionBackground:url(./img/ronen.jpg);">
+      <div class="shadow"></div>
+      <div class="label">
+       <div class="icon">
+         <a target="_blank" href="https://www.facebook.com/ronen.acharya"><i class='bx bxl-facebook'></i></a>
        </div>
-    </div>
-    <div class="option" style="--optionBackground:url(./img/prabesh.jpg);">
-       <div class="shadow"></div>
-       <div class="label">
-        <div class="icon">
-          <a target="_blank" href="https://www.linkedin.com/in/prabesh-shrestha-6aaa141b6/"><i class='bx bxl-linkedin'></i></a>
-        </div>
-        <div class="info">
-          <div class="main">Prabesh Shrestha</div>
-          <div class="sub">Robotics Lead</div>
-          </div>
+       <div class="info">
+            <div class="main">Ronen Aacharya</div>
+            <div class="sub">Technical Department Head</div>
+         </div>
+      </div>
+   </div>
+   <div class="option" style="--optionBackground:url(./img/prabesh.jpg);">
+      <div class="shadow"></div>
+      <div class="label">
+       <div class="icon">
+         <a target="_blank" href="https://www.linkedin.com/in/prabesh-shrestha-6aaa141b6/"><i class='bx bxl-linkedin'></i></a>
        </div>
-    </div>
-  
+       <div class="info">
+         <div class="main">Prabesh Shrestha</div>
+         <div class="sub">Robotics Lead</div>
+         </div>
+      </div>
+   </div>
   </div>
 </div>
  <footer class="footer-area">
