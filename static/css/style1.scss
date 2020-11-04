@@ -1258,28 +1258,47 @@ Page Title Area CSS
   }
 }
 .heading1 {
-  width: 20%;
-  margin: 0;
-  /* padding-left: 9rem; */
-  align-items: center;
+  width: 40%;
+  margin-left: 15rem;
   font-weight: 900;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: .1ch;
+  line-height: 1;
+  // padding-bottom: -30em;
+  margin-top: 8.5em;
+  position: relative;
+}
+.heading2 {
+  width: 40%;
+  margin-left: 9rem;
+  font-weight: 900;
+  font-size: 1.618rem;
   text-transform: uppercase;
   letter-spacing: .1ch;
   line-height: 1;
   padding-bottom: .5em;
   margin-bottom: 1rem;
   position: relative;
-
+  color: #217ee900;
 }
 // <------------------------------------------------------------------------------------------------------------------------>
 // responsive
 @media only #{$media} and ($feature_max : $value_two) {
 
   .heading1{
-width: 0;
-color: #217ee900;
-    
+    // padding-top: 0;
+    margin: 0;
+    width: 0;
+    z-index: -1;
+    color: #217ee900;
+  }
+  .heading2{
+    // padding-top: 0;
+    margin: 0;
+    width: 0;
+    z-index: -1;
+    color: #217ee900;
   }
   .optional-btn {
     padding: 10px 15px 10px 35px;
