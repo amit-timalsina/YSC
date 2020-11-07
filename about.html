@@ -143,7 +143,7 @@ main {
   overflow: hidden;
   min-width: 400px;
   max-width: 600px;
-  width: calc(100% - 200px);
+  width: calc(100% - 300px);
   height: 300px;
   position: relative;
 }
@@ -611,7 +611,7 @@ main {
   </footer> -->
   <div class="go-top"><i class='bx bx-up-arrow-alt' id='myBtn'></i></div>
 </body>
-  <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
   <script src="js/flex.js"></script>
@@ -623,6 +623,22 @@ main {
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
   <script>
+    // Go to Top
+    $(function () {
+      // Scroll Event
+      $(window).on('scroll', function () {
+        var scrolled = $(window).scrollTop();
+        if (scrolled > 300) $('.go-top').addClass('active');
+        if (scrolled < 300) $('.go-top').removeClass('active');
+      });
+      // Click Event
+      $('.go-top').on('click', function () {
+        $("html, body").animate({ scrollTop: "0" }, 500);
+      });
+    });
+  </script>
+  <script>
+
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());
 
