@@ -1707,6 +1707,13 @@ Page Title Area CSS
 @media only screen and (max-width: 425px) {
   .grid-past {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .grid-past {
+    display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
   }
