@@ -113,7 +113,7 @@ Flaticon icon font: Flaticon
 #home-heading {
   position: relative;
   min-height: 200px;
-  background: url('../img/drawing.png');
+  background: url('https://raw.githubusercontent.com/amit076/YSC/main/img/drawing.png');
   background-attachment: fixed;
   background-repeat: no-repeat;
   text-align: center;
